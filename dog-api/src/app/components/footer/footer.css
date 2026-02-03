@@ -1,23 +1,35 @@
-footer{
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    gap: 2vh;
-    color: #f0fff4;
-    font-size: 1.1rem;
-    background-color: #1e593c;
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  padding-left: 25px;
+  gap: 2.8vh;
+  color: #f0fff4;
+  font-size: 1.35rem;
+  background-color: #1e593c;
 }
-.git{
-    display: flex;
-    gap: 5px;
+.git {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
-.git i{
-    font-size: 1.3rem;
+.git i {
+  font-size: 1.8rem;
 }
-footer a{
-    color: #88ffad;
-    transition: all 0.5s;
+footer a {
+  color: #88ffad;
+  transition: all 0.5s;
 }
-footer a:hover{
-     color: #2ecc71;
+footer a:hover {
+  color: #2ecc71;
+}
+@media (max-width: 650px) {
+  footer {
+    font-size: 1.07rem;
+    padding-left: 15px;
+    gap: 2.2vh;
+  }
+  .git i {
+    font-size: 1.5rem;
+  }
 }

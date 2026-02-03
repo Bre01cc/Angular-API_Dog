@@ -1,54 +1,126 @@
 header {
-    background-color: #2E8B57;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    padding: 1rem 2rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #2e8b57;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+header h1 {
+  font-size: 3rem;
+  padding-left: 23vw;
+}
+header img {
+  width: 70%;
 }
 
-.dog-api{
-    display: grid;
-    place-items: center;
+.dog-api {
+  display: grid;
+  place-items: center;
 }
 
-.dog-api p{
-    font-weight: 900;
+.dog-api p {
+  font-size: 1.2rem;
+  font-weight: 900;
 }
 
 .input-container {
-    display: flex;
-    gap: 8px;
+  display: flex;
+  gap: 8px;
+  width: 35vw;
 }
-
+.input-container .input-raca {
+  height: 1.9rem;
+}
+.input-container input {
+  width: 75%;
+}
 .btn-busca {
-    border: 2px solid #1E5936;
-    background-color: #064E3B;
-    padding-inline: 4px;
-    padding-block: 4px;
-    color: white;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-
+  border: 2px solid #1e5936;
+  background-color: #064e3b;
+  padding-inline: 20px;
+  padding-block: 6px;
+  color: white;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
 input {
-    border: 2px solid #1E5936;
-    background-color: #F0FFF4;
-    padding-inline: 4px;
-    padding-block: 4px;
-    color: black;
-    border-radius: 8px;
-    outline: none;
+  border: 2px solid #3f9260;
+  background-color: #f0fff4;
+  padding-inline: 8px;
+  padding-block: 4px;
+  color: black;
+  border-radius: 8px;
+  outline: none;
 }
 
 input:focus {
-    outline: none;
-    box-shadow: none;
+  outline: none;
+  box-shadow: none;
 }
 
 .btn-busca:hover {
-    box-shadow: 0 0 10px white;
-    background-color: #0f8a5f;
+  box-shadow: 0 0 10px white;
+  border: none;
+  transform: scale(1.1);
+  cursor: pointer;
+  background-color: #0f8a5f;
+}
+
+@media (max-width: 950px) {
+  header {
+    padding: 0.8rem 1.3rem;
+    gap: 12px;
+  }
+  header h1 {
+    display: none;
+  }
+  .input-container {
+    align-items: center;
+    width: 75%;
+  }
+  .input-container .input-raca {
+    width: 80%;
+    height: 35px;
+  }
+  .dog-api {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .dog-api p {
+    font-size: 1.4rem;
+  }
+  .btn-busca {
+    font-size: 1.2rem;
+    padding: 7px;
+  }
+}
+
+@media (max-width: 650px) {
+  header {
+    padding: 0.5rem 1rem;
+    flex-direction: column;
+  }
+  header img {
+    width: 58%;
+  }
+  .dog-api {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .dog-api p {
+    font-size: 1.2rem;
+  }
+  .input-container .input-raca {
+    width: 85%;
+    height: 30px;
+    padding-left: 10px;
+  }
+  .input-container {
+    width: 95%;
+  }
+  .btn-busca {
+    font-size: 1rem;
+    padding: 5px;
+  }
 }
