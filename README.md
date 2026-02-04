@@ -34,28 +34,28 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 - Você tem uma máquina `<Windows / Linux / Mac>`.
 - Para a compreensão da utilização do projeto, indicamos a consulta sobre [documentação oficial do Angular](https://angular.dev/overview) e a leitura completa do README do projeto.
 
-## 🚀 Instalando API DOG:
+## 🚀 Instalando o Angular:
 
-Para instalar o **API DOG**, siga estas etapas:
+Para instalar o **Angular**, siga estas etapas:
 
 Linux e macOS:
 
 ```
-<comando_de_instalação>
+npm install -g @angular/cli
 ```
 
 Windows:
 
 ```
-<comando_de_instalação>
+npm install -g @angular/cli
 ```
 
-## ☕ Usando API DOG
+## ☕ Criando um projeto
 
-Para usar API DOG, siga estas etapas:
+Para criar um projeto em, siga estas etapas:
 
 ```
-<exemplo_de_uso>
+ng new <project-name>
 ```
 
 ---
