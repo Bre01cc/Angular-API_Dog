@@ -4,44 +4,5 @@
   flex-direction: column;
   min-height: 100vh;
   justify-content: space-between;
-}
-
-.conteudo-dinamico {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80dvh;
-  width: 100dvw;
-}
-
-.conteudo-dinamico main{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-width: 100vw;
-  width: 100%;
-}
-
-.conteudo-dinamico img {
-  z-index: 0;
-}
-
-.conteudo-dinamico h1{
-  font-size: 3.5rem;
-  color: rgba(30, 77, 46, 0.851);
-}
-
-.central{
-  display: flex;
-  align-items: center;
-}
-
-main input{
-  width: 70%;
-  height: 5vh;
-  border-radius: 7rem;
-  text-align: center;
-  margin: 10px;
-  font-size: 2rem;
+   font-family: "Roboto", sans-serif;
 }
