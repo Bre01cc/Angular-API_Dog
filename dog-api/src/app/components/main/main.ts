@@ -14,8 +14,9 @@ export class Main {
   private router = inject(Router);
 
   navegarParaRaca(raca: string) {
+    const racaFormatada = raca.trim().toLowerCase()
     if (raca) {
-      this.router.navigate(['/visualizar', raca]);
+      this.router.navigate(['/visualizar', racaFormatada])
     }
   }
 }

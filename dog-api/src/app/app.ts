@@ -16,12 +16,10 @@ export class App {
   private router = inject(Router)
 
 
-  fazerBusca(raca: string) {
-    const carimbo = new Date().getTime()
-
-    this.router.navigate(['/dog', raca], {
-      queryParams: { refresh: carimbo }
-    })
+navegarParaRaca(raca: string) {
+  if (raca) {
+    this.router.navigate(['/visualizar', raca.trim().toLowerCase()]);
   }
+}
 }
 
